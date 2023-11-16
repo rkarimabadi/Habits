@@ -1,8 +1,6 @@
 ﻿.footer {
     width: 100%;
-    min-height: 80px;
-    margin-bottom:50px!important;
-    top:10px!important;
+
 }
 .footer-container {
     display: flex;
@@ -12,7 +10,7 @@
     align-items: center;
     background-color: white;
     min-height: 60px;
-    margin: 0 20px 20px 20px;
+    margin: 10px 20px 60px 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px gainsboro;
     padding:0 20px 0 20px;
