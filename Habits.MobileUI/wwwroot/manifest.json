@@ -1,0 +1,12 @@
+{
+  "name": "Habits Mobile UI",
+  "short_name": "Habits",
+  "start_url": "./",
+  "display": "standalone",
+  "scope": "/",
+  "categories": [ "multipurpose ", "ecommerce", "Service", "Provider", "delivery", "store", "wallet", "banking", "education", "distance learning", "jobs", "careers" ],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait",
+  "description": "یک قالب برای فریمورک بلیزر",
+}
