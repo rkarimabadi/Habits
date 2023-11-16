@@ -9,4 +9,12 @@
   "theme_color": "#ffffff",
   "orientation": "portrait",
   "description": "یک قالب برای فریمورک بلیزر",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any maskable"
+    }
+  ]
 }

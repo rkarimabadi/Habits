@@ -2,7 +2,31 @@
 @import url('fonts/IRANSans/style.css');
 @import url('fonts/open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+/*-----------------------------
+  disable the bounce effect
+-----------------------------*/
+body {
+    /* Set the overflow to hidden to prevent scrolling */
+    overflow: hidden;
+    /* Set the height to 100% of the viewport */
+    height: 100vh;
+}
 
+#app {
+    /* Use absolute positioning and fill the entire screen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Enable scrolling inside the app container */
+    overflow-y: scroll;
+    /* Prevent overscrolling with webkit */
+    -webkit-overflow-scrolling: touch;
+}
+/*-----------------------------
+  End. disable the bounce effect
+-----------------------------*/
 html, body {
     font-family: 'Irancell','IRANSans','Helvetica Neue', Helvetica, Arial, sans-serif;
     padding: 0;
