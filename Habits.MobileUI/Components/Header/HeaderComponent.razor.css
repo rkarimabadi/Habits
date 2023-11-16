@@ -7,6 +7,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     position:relative;
+    z-index:1300;
 }
 .top-row {
     display: flex;
