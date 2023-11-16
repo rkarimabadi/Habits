@@ -24,12 +24,14 @@
 .menu-icon[b-a0d7gpq8xp] {
     width: 24px;
     height: 24px;
-    fill: #bbbbbb;
-    cursor: pointer;
 }
     .menu-icon.active[b-a0d7gpq8xp] {
         fill: #429ebd !important;
         cursor:default;
+    }
+    .menu-icon.inactive[b-a0d7gpq8xp] {
+        fill: #bbbbbb !important;
+        cursor: pointer;
     }
 
 /* /Components/Header/HeaderComponent.razor.rz.scp.css */
@@ -42,6 +44,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     position:relative;
+    z-index:1300;
 }
 .top-row[b-0wxf5cubvb] {
     display: flex;
