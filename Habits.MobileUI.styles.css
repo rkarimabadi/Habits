@@ -25,15 +25,14 @@
     width: 24px;
     height: 24px;
 }
-    .menu-icon.active[b-a0d7gpq8xp] {
+    [b-a0d7gpq8xp].menu-icon.active > svg > path{
         fill: #429ebd !important;
         cursor:default;
     }
-    .menu-icon.inactive[b-a0d7gpq8xp] {
-        fill: #bbbbbb !important;
-        cursor: pointer;
-    }
-
+[b-a0d7gpq8xp].menu-icon.inactive > a > svg > path {
+    fill: #bbbbbb !important;
+    cursor: pointer;
+}
 /* /Components/Header/HeaderComponent.razor.rz.scp.css */
 .header[b-0wxf5cubvb] {
     width: 100%;
