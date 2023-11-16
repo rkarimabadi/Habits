@@ -12,7 +12,7 @@ body {
     height: 100vh;
 }
 
-#app {
+#app, .app-container {
     /* Use absolute positioning and fill the entire screen */
     position: absolute;
     top: 0;
