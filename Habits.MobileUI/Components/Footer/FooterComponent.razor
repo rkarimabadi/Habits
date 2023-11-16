@@ -1,0 +1,23 @@
+﻿<CascadingValue Name="Parent" Value="this">
+    <footer class="footer" >
+        <div class="footer-container">
+        @ChildContent
+        </div>
+    </footer>
+</CascadingValue>
+
+
+@code {
+    [Parameter] public string ActiveItem { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    private List<FooterItemComponent> Childs = new List<FooterItemComponent>();
+    public void AddChild(FooterItemComponent child)
+    {
+        Childs.Add(child);
+        if (child.Name == ActiveItem)
+        {
+            child.Active(true);
+            StateHasChanged();
+        }
+    }
+}

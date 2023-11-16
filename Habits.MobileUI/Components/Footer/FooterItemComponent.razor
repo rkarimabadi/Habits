@@ -1,0 +1,32 @@
+﻿<div class="menu-icon @isActiveCssClass">
+    @if (_isActive)
+    {
+        @ChildContent
+    } else
+    {
+    <a href="@href">
+        @ChildContent
+    </a>        
+    }
+
+</div>
+
+@code {
+    [CascadingParameter(Name="Parent")] public FooterComponent Parent { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string Name { get; set; }
+    [Parameter] public string href { get; set; }
+    [Parameter] public bool IsActive { get; set; } = false;
+    private bool _isActive { get; set; }
+
+    private string isActiveCssClass { get { return _isActive ? "active" : ""; } }
+    protected override void OnInitialized()
+    {
+        _isActive = IsActive;
+        Parent.AddChild(this);
+    }
+    public void Active(bool state)
+    {
+        _isActive = state;
+    }
+}

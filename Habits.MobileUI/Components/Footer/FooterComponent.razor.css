@@ -1,0 +1,21 @@
+﻿.footer {
+
+    width: 100%;
+    min-height: 80px;
+
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    min-height: 60px;
+    margin: 0 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px gainsboro;
+    padding:0 20px 0 20px;
+}
+
+

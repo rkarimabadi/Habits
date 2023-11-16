@@ -1,0 +1,46 @@
+﻿.header {
+    width: 100%;
+    min-height: 9em;
+    border-bottom-right-radius: 50px;
+    background-color: dodgerblue;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position:relative;
+}
+.top-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+::deep .menu-icon {
+    width: 25px;
+    margin: 15px;
+    fill: white;
+
+}
+::deep .title-row {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    flex-grow:1;
+}::deep .title-row p{
+     font-size: smaller;
+}
+::deep .title-row .header-title {
+    width: 100vw;
+}
+.icon-placeholder {
+    width: 6em;
+    background-color: orange;
+    border-color: white;
+    border-style: solid;
+    border-width: 1em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1.5em;
+    left: -1em;
+}
+

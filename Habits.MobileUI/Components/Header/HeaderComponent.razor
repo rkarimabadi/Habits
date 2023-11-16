@@ -1,0 +1,11 @@
+﻿<header class="header" >
+    <div class="top-row">@HeaderSection</div>
+    <div class="title-row">@TitleSection</div>
+    <div class="icon-placeholder">@IconSection</div>
+</header>
+
+@code {
+    [Parameter] public RenderFragment IconSection { get; set; }
+    [Parameter] public RenderFragment HeaderSection { get; set; }
+    [Parameter] public RenderFragment TitleSection { get; set; }
+}
