@@ -23,6 +23,7 @@ body {
     overflow-y: scroll;
     /* Prevent overscrolling with webkit */
     -webkit-overflow-scrolling: touch;
+    overflow:hidden;
 }
 /*-----------------------------
   End. disable the bounce effect
