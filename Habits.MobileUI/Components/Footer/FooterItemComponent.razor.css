@@ -1,11 +1,13 @@
 ﻿.menu-icon {
     width: 24px;
     height: 24px;
-    fill: #bbbbbb;
-    cursor: pointer;
 }
     .menu-icon.active {
         fill: #429ebd !important;
         cursor:default;
+    }
+    .menu-icon.inactive {
+        fill: #bbbbbb !important;
+        cursor: pointer;
     }
 

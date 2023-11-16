@@ -19,7 +19,7 @@
     [Parameter] public bool IsActive { get; set; } = false;
     private bool _isActive { get; set; }
 
-    private string isActiveCssClass { get { return _isActive ? "active" : ""; } }
+    private string isActiveCssClass { get { return _isActive ? "active" : "inactive"; } }
     protected override void OnInitialized()
     {
         _isActive = IsActive;
