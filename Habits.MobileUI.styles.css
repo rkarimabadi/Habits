@@ -1,9 +1,9 @@
 /* /Components/Footer/FooterComponent.razor.rz.scp.css */
 .footer[b-bsrsdvmpqg] {
-
     width: 100%;
     min-height: 80px;
-
+    margin-bottom:50px!important;
+    top:10px!important;
 }
 .footer-container[b-bsrsdvmpqg] {
     display: flex;
@@ -96,13 +96,27 @@ body[b-w4p5d7jash] {
 }
 /* /Shared/NotificationLayout.razor.rz.scp.css */
 .app-container[b-ipenlhb8sx] {
-    background-color:snow;
-    width:100vw;
-    height:100vh;
+    background-color: snow;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+[b-ipenlhb8sx] .page-black {
+    overflow: auto;
 }
 /* /Shared/SettingsLayout.razor.rz.scp.css */
 .app-container[b-2ufoxqkcio] {
-    background-color:snow;
-    width:100vw;
-    height:100vh;
+    background-color: snow;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+[b-2ufoxqkcio] .page-black {
+    overflow: auto;
 }
