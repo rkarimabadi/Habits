@@ -1,0 +1,108 @@
+/* /Components/Footer/FooterComponent.razor.rz.scp.css */
+.footer[b-bsrsdvmpqg] {
+
+    width: 100%;
+    min-height: 80px;
+
+}
+.footer-container[b-bsrsdvmpqg] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    min-height: 60px;
+    margin: 0 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px gainsboro;
+    padding:0 20px 0 20px;
+}
+
+
+/* /Components/Footer/FooterItemComponent.razor.rz.scp.css */
+.menu-icon[b-a0d7gpq8xp] {
+    width: 24px;
+    height: 24px;
+    fill: #bbbbbb;
+    cursor: pointer;
+}
+    .menu-icon.active[b-a0d7gpq8xp] {
+        fill: #429ebd !important;
+        cursor:default;
+    }
+
+/* /Components/Header/HeaderComponent.razor.rz.scp.css */
+.header[b-0wxf5cubvb] {
+    width: 100%;
+    min-height: 9em;
+    border-bottom-right-radius: 50px;
+    background-color: dodgerblue;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position:relative;
+}
+.top-row[b-0wxf5cubvb] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+[b-0wxf5cubvb] .menu-icon {
+    width: 25px;
+    margin: 15px;
+    fill: white;
+
+}
+[b-0wxf5cubvb] .title-row {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    flex-grow:1;
+}[b-0wxf5cubvb] .title-row p{
+     font-size: smaller;
+}
+[b-0wxf5cubvb] .title-row .header-title {
+    width: 100vw;
+}
+.icon-placeholder[b-0wxf5cubvb] {
+    width: 6em;
+    background-color: orange;
+    border-color: white;
+    border-style: solid;
+    border-width: 1em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1.5em;
+    left: -1em;
+}
+
+/* /Components/TemplateComponent.razor.rz.scp.css */
+body[b-w4p5d7jash] {
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+.app-container[b-967om0sqzc] {
+    background-color:snow;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+}
+[b-967om0sqzc] .page-black {
+    overflow:auto;
+}
+/* /Shared/NotificationLayout.razor.rz.scp.css */
+.app-container[b-ipenlhb8sx] {
+    background-color:snow;
+    width:100vw;
+    height:100vh;
+}
+/* /Shared/SettingsLayout.razor.rz.scp.css */
+.app-container[b-2ufoxqkcio] {
+    background-color:snow;
+    width:100vw;
+    height:100vh;
+}

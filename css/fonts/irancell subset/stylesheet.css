@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Irancell';
+    src: url('subset-IrancellLight.woff2') format('woff2'),
+        url('subset-IrancellLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Irancell';
+    src: url('subset-IrancellExtraLight.woff2') format('woff2'),
+        url('subset-IrancellExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
