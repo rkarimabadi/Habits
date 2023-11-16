@@ -2,12 +2,11 @@
     width: 24px;
     height: 24px;
 }
-    .menu-icon.active {
+    ::deep.menu-icon.active > svg > path{
         fill: #429ebd !important;
         cursor:default;
     }
-    .menu-icon.inactive {
-        fill: #bbbbbb !important;
-        cursor: pointer;
-    }
-
+::deep.menu-icon.inactive > a > svg > path {
+    fill: #bbbbbb !important;
+    cursor: pointer;
+}
