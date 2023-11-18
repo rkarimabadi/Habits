@@ -34,7 +34,6 @@
 /* /Components/Header/HeaderComponent.razor.rz.scp.css */
 .header[b-0wxf5cubvb] {
     width: 100%;
-    background-color: dodgerblue;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -44,10 +43,11 @@
 [b-0wxf5cubvb] .menu-icon {
     width: 25px;
     margin: 15px;
-    fill: white;
+    fill: #bbbbbb;
     font-size: 1.5rem;
     line-height: 0.5em;
     text-align: center;
+    color: #bbbbbb;
 }
 
 
