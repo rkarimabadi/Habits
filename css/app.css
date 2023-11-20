@@ -14,17 +14,17 @@ body {
 }
 
 #app, .app-container {
-    /* Use absolute positioning and fill the entire screen */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    /* Enable scrolling inside the app container */
-    overflow-y: scroll;
-    /* Prevent overscrolling with webkit */
     -webkit-overflow-scrolling: touch;
-    overflow:hidden;
 }
 /*-----------------------------
   End. disable the bounce effect
@@ -35,6 +35,10 @@ html, body {
     margin: 0;
 }
 
+main {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
 h1:focus {
     outline: none;
 }

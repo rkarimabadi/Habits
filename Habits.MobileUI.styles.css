@@ -1,7 +1,9 @@
 /* /Components/Footer/FooterComponent.razor.rz.scp.css */
 .footer[b-bsrsdvmpqg] {
-    width: 100%;
-
+    background-color: #f8f9fa;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
 }
 .footer-container[b-bsrsdvmpqg] {
     display: flex;
@@ -11,7 +13,7 @@
     align-items: center;
     background-color: white;
     min-height: 60px;
-    margin: 10px 20px 90px 20px;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px gainsboro;
     padding:0 20px 0 20px;
@@ -32,7 +34,15 @@
     cursor: pointer;
 }
 /* /Components/Header/HeaderComponent.razor.rz.scp.css */
-.header[b-0wxf5cubvb] {
+header[b-0wxf5cubvb] {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header-container[b-0wxf5cubvb] {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
