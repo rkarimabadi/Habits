@@ -23,6 +23,7 @@ namespace Habits.MobileUI.Share
         {
             if (config.NumberOfPlayers < 1) throw new ArgumentOutOfRangeException("تعداد بازیکن‌ها حداقل باید یک نفر باشد");
             if (config.NumberOfPlayers > 5) throw new ArgumentOutOfRangeException("تعداد بازیکن‌ها حداکثر می‌تواند پنج نفر باشد");
+            Players = new List<Player>();
             for (int i = 0; i < config.NumberOfPlayers; i++) 
             {
                 Players.Add(new Player{ Score = 0, Name= Names[i] });
