@@ -7,24 +7,28 @@
   disable the bounce effect
 -----------------------------*/
 body {
-    /* Set the overflow to hidden to prevent scrolling */
     overflow: hidden;
-    /* Set the height to 100% of the viewport */
     height: 100vh;
-}
+    width: 100%;
 
-#app, .app-container {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
+}
+#app {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+}
+#app-container {
+    display:flex;
+    flex-flow: column nowrap;
+    
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+
 }
 /*-----------------------------
   End. disable the bounce effect
@@ -33,9 +37,15 @@ html, body {
     font-family: 'Irancell','IRANSans','Helvetica Neue', Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 main {
+    padding-bottom: 50px;
+    padding-top: 0px;
+    flex-direction: column;
+    display:flex;
     flex-grow: 1;
     overflow-y: scroll;
 }
