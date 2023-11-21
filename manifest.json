@@ -1,6 +1,6 @@
 {
-  "name": "Habits Mobile UI",
-  "short_name": "Habits",
+  "name": "بازیهای خانوادگی",
+  "short_name": "بازی",
   "start_url": "./",
   "display": "standalone",
   "scope": "/",
@@ -8,7 +8,7 @@
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "orientation": "portrait",
-  "description": "یک قالب برای فریمورک بلیزر",
+  "description": "چند بازی برای دورهمی خانوادگی",
   "icons": [
     {
       "src": "favicon.png",
