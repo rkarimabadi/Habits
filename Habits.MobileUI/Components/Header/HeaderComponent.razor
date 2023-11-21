@@ -18,7 +18,7 @@
     [Parameter] public RenderFragment ChildContent { get; set; }
     protected override void OnInitialized()
     {
-        PageHistoryState.AddPageToHistory($"/{NavManager.ToBaseRelativePath(NavManager.Uri)}");
+        PageHistoryState.AddPageToHistory($"./{NavManager.ToBaseRelativePath(NavManager.Uri)}");
         base.OnInitialized();
     }
 }
