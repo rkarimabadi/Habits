@@ -1,9 +1,24 @@
-﻿<header>
+﻿@inject PageHistoryState PageHistoryState
+@inject NavigationManager NavManager
+<header>
     <div class="header-container">
         @ChildContent
+        @if (PageHistoryState.CanGoBack())
+        {
+            <div class="menu-icon">
+                <a href="@PageHistoryState.GetGoBackPage()">
+                    <i class="codicon codicon-chevron-left"></i>
+                </a>
+            </div>
+        }
     </div>
 </header>
 
 @code {
     [Parameter] public RenderFragment ChildContent { get; set; }
+    protected override void OnInitialized()
+    {
+        PageHistoryState.AddPageToHistory($"/{NavManager.ToBaseRelativePath(NavManager.Uri)}");
+        base.OnInitialized();
+    }
 }

@@ -1,0 +1,48 @@
+﻿@page "/config-game"
+@using Habits.MobileUI.Models;
+@layout MainLayout
+@inject Game game
+@inject NavigationManager navigatioinManager
+<HeaderComponent>
+    <div class="menu-icon">
+        <i class="codicon codicon-menu"></i>
+        @* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.05 208.02"><title>Untitled-1</title><path d="M119.05,30.67c-31.91,0-63.81-.05-95.72,0C12,30.72.05,29.46.07,15.4S12,0,23.35,0q96.72.08,193.44,0c11.29,0,23.39,1.42,23.33,15.36s-11.93,15.38-23.35,15.34C184.2,30.58,151.62,30.66,119.05,30.67Z" transform="translate(-0.07)" /><path d="M118.25,119.41H22.55c-11.4,0-23.91-2-21.86-15.88.86-5.78,13.85-13.8,21.44-13.93,65.12-1.11,130.26-.59,195.39-.69,11.61,0,23.78,2.35,21.95,15.86-.78,5.75-13.79,13.62-21.55,14C184.76,120.3,151.49,119.41,118.25,119.41Z" transform="translate(-0.07)" /><path d="M121.91,178.45c32.53,0,65.06.14,97.59-.1,11.35-.08,21.85,3.44,20,15.56-.81,5.46-12.79,13.08-19.81,13.2q-99.55,1.65-199.13.29c-7-.09-18.93-7.63-19.92-13.24C-1.47,182,8.89,178.29,20.33,178.37,54.19,178.61,88.05,178.46,121.91,178.45Z" transform="translate(-0.07)" /></svg> *@
+    </div>
+</HeaderComponent>
+<main class="px-3 pt-5">
+    <EditForm Model="gameConfig" OnSubmit="async() => await SetupGame()">
+        <div class="input-group mb-3">
+            <span class="input-group-text">تعداد بازیکنان: </span>
+            <InputNumber class="form-control" @bind-Value="gameConfig.NumberOfPlayers" />
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">تعداد سئوالات: </span>
+            <InputNumber class="form-control" @bind-Value="gameConfig.QuestionCountPerRound" />
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">مناسب برای دورهمی خانوادگی: </span>
+            <div class="form-control">
+                <InputRadioGroup @bind-Value="gameConfig.IsFamilyFriendly">
+                    <span class="ps-2 pe-5"><InputRadio class="me-1" Value="false" />خیر</span><span><InputRadio class="me-1" Value="true" />بله</span>
+                </InputRadioGroup>
+            </div>
+        </div>
+        <div class="d-grid"><button type="submit" class="btn btn-primary btn-lg">شروع بازی</button></div>
+    </EditForm>
+</main>
+
+@code {
+    private GameConfig gameConfig = new GameConfig { IsFamilyFriendly = true, NumberOfPlayers = 5, QuestionCountPerRound = 10};
+    private async Task SetupGame()
+    {
+        try
+        {
+            await game.SetupGame(gameConfig);
+            navigatioinManager.NavigateTo("/game");
+        }
+        catch
+        {
+            
+        }
+    }
+}

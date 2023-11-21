@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Habits.MobileUI </title>
     <base href="/" />
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap.rtl.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="Habits.MobileUI.styles.css" rel="stylesheet" />
@@ -30,6 +30,18 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script>
+        function setWindowHeightVariable() {
+            let vh = window.innerHeight;
+            document.documentElement.style.setProperty('--window-inner-height', `${vh}px`);
+        }
+
+        // Run the function to set the variable when the window is resized
+        window.addEventListener('resize', setWindowHeightVariable);
+
+        // Run the function once to set the variable when the page loads
+        setWindowHeightVariable();
+    </script>
 </body>
 
 </html>

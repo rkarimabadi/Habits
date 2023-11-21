@@ -1,0 +1,18 @@
+﻿.list-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 1em;
+    align-items: center;
+    height: 100%;
+}
+.card-item {
+    min-width: 40vw;
+    text-align: center;
+    color: white;
+    display: table-cell;
+    padding: 2em 0 2em 0;
+    background-color: cadetblue;
+    border-radius: 5%;
+}

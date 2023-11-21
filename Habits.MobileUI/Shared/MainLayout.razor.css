@@ -1,11 +1,9 @@
-.app-container {
-    background-color:snow;
-    width:100vw;
-    height:100vh;
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content: space-between;
+.flex-col {
+    flex-direction: column;
 }
-::deep .page-black {
-    overflow:auto;
+.flex {
+    display: flex;
+}
+.flex-grow, .grow {
+    flex-grow: 1;
 }
