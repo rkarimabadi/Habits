@@ -13,11 +13,11 @@
     <EditForm Model="gameConfig" OnSubmit="async() => await SetupGame()">
         <div class="input-group mb-3">
             <span class="input-group-text">تعداد بازیکنان: </span>
-            <InputNumber class="form-control" @bind-Value="gameConfig.NumberOfPlayers" />
+            <InputNumber min="1" max="5" class="form-control" @bind-Value="gameConfig.NumberOfPlayers" />
         </div>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">تعداد سئوالات: </span>
-            <InputNumber class="form-control" @bind-Value="gameConfig.QuestionCountPerRound" />
+            <InputNumber min="1" max="20" class="form-control" @bind-Value="gameConfig.QuestionCountPerRound" />
         </div>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">مناسب برای دورهمی خانوادگی: </span>
